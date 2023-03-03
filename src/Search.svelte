@@ -9,7 +9,7 @@
 </script>
 
 <form on:submit={handleSubmit}>
-  <label for="query">Search:</label>
+  <label for="query">github repo Search:</label>
   <input type="text" id="query" bind:value={query}>
   <button type="submit">Submit</button>
 </form>

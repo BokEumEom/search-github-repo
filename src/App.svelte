@@ -29,7 +29,12 @@
 {:else}
 	<ul>
 		{#each results as result}
-			<h2><li><a href={result.html_url}>{result.full_name}</a></li></h2>
+			<h2>
+				<li>
+					<a href={result.html_url}>{result.full_name}</a>
+					<p class="meta">{result.description}</p>
+				</li>
+			</h2>
 		{/each}
 	</ul>
 {/if}
@@ -59,5 +64,9 @@
 	h2 {
 		font-size: 1em;
 		margin: 0.5em 0;
+	}
+
+	.meta {
+		color: #999;
 	}
 </style>
