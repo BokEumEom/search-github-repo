@@ -13,3 +13,11 @@
   <input type="text" id="query" bind:value={query}>
   <button type="submit">Submit</button>
 </form>
+
+<style>
+	label {
+		color: purple;
+		font-family: 'Comic Sans MS', cursive;
+		font-size: 2em;
+	}
+</style>
